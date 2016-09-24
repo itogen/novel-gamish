@@ -1,0 +1,104 @@
+body{
+	margin:0;
+}
+#novel-gamish {
+	position: relative;
+	width: 320px;
+	height: 240px;
+	background-color: black;
+	cursor: pointer;
+}
+#novel-gamish img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 240px;
+}
+#novel-gamish p{
+	display: none;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 240px;
+	padding: 5px;
+	margin: 0;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	font-size:14px;
+}
+#novel-gamish p.active{
+	display: block;
+}
+#novel-gamish a{
+	display: block;
+	height: 240px;
+	color: white;
+	text-decoration: none;
+    -webkit-animation:blink 1.0s step-end infinite alternate;
+    -moz-animation:blink 1.0s step-end infinite alternate;
+    animation:blink 1.0s step-end infinite alternate;
+}
+
+/* 点滅 */
+@-webkit-keyframes blink{
+    21%,40%,61%,80%,100% {opacity:0;}
+    0%,20%,41%,60%,81%,99% {opacity:1;}
+}
+@-moz-keyframes blink{
+    21%,40%,61%,80%,100% {opacity:0;}
+    0%,20%,41%,60%,81%,99% {opacity:1;}
+}
+@keyframes blink{
+    21%,40%,61%,80%,100% {opacity:0;}
+    0%,20%,41%,60%,81%,99% {opacity:1;}
+}
+
+@media screen and ( min-width:500px ){
+	#novel-gamish {
+		width: 500px;
+		height: 375px;
+	}
+	#novel-gamish img{
+		max-height: 375px;
+	}
+	#novel-gamish p{
+		height: 375px;
+		font-size:18px;
+	}
+	#novel-gamish a{
+		height: 375px;
+	}
+}
+@media screen and ( min-width:640px ){
+	#novel-gamish {
+		width: 640px;
+		height: 480px;
+	}
+	#novel-gamish img{
+		max-height: 480px;
+	}
+	#novel-gamish p{
+		height: 480px;
+		font-size:32px;
+	}
+	#novel-gamish a{
+		height: 480px;
+	}
+}
+@media screen and ( min-width:800px ){
+	#novel-gamish {
+		width: 800px;
+		height: 600px;
+	}
+	#novel-gamish img{
+		max-height: 600px;
+	}
+	#novel-gamish p{
+		height: 600px;
+		font-size:48px;
+	}
+	#novel-gamish a{
+		height: 600px;
+	}
+}
